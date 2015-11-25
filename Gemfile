@@ -43,3 +43,7 @@ gem 'coffee-script-source', '1.8.0'
 
 # Use Carrierwave Gem
 gem 'carrierwave'
+
+# use minimagick gem
+gem 'mini_magick'
+
