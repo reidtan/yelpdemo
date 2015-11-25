@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'testing/thispage'
+
+  resources :reviews
+
   devise_for :users
   resources :restaurants
 
