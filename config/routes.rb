@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get 'testing/thispage'
-
-  resources :reviews
+  resources :reviews, except: [:show, :index]
 
   devise_for :users
   resources :restaurants
