@@ -47,3 +47,5 @@ gem 'carrierwave'
 # use minimagick gem
 gem 'mini_magick'
 
+#use devise gem
+gem 'devise'

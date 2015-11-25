@@ -22,9 +22,9 @@
         <td><%= restaurant.address %></td>
         <td><%= restaurant.phone %></td>
         <td><%= restaurant.website %></td>
-        <td><%= link_to 'Show', restaurant, class: "btn btn-link" %></td>
-        <td><%= link_to 'Edit', edit_restaurant_path(restaurant), class: "btn btn-link" %></td>
-        <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %></td>
+        <td><%= link_to 'Show', restaurant, class: "btn btn-danger" %></td>
+        <td><%= link_to 'Edit', edit_restaurant_path(restaurant), class: "btn btn-danger" %></td>
+        <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,6 +32,6 @@
 
 <br>
 
-<%= link_to 'New Restaurant', new_restaurant_path, class: "btn btn-link" %>
+<%= link_to 'New Restaurant', new_restaurant_path, class: "btn btn-danger" %>
 
 <%= image_tag "http://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/e41bc8917803/assets/img/structural/happy_footer.png" %>
