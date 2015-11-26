@@ -15,8 +15,8 @@ class ReviewsController < ApplicationController
 
   def create
     @review = Review.new(review_params)
-    @review.user_id = current_user.id
-    @review.restaurant_id = @restaurant.id
+    @review.user = current_user
+    @review.restaurant = @restaurant
 
     respond_to do |format|
       if @review.save
